@@ -1,0 +1,14 @@
+*  replicate taylor losses
+> fourier overfitting
+- fourier taylor nulification
+> simple, convulational and ft network
+
+----
+taylor expansion at begining and ft static at beginning
+domain expansion works better when you try to predict formula 
+learning rate different answer for taylor and simple
+fourier and ft both reach same accuracy compared to previous and ft reaches connclusion faster
+ft caputures more value when overfitting
+
+---
+list out as comprehensive analysis
