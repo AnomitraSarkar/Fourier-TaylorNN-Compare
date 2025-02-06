@@ -128,3 +128,6 @@ class TaylorNN(nn.Module):
 # 			cur = self.relu(layer(combined))
 # 		return self.outLayer(torch.cat([cur, prev, x], 1))
     
+
+
+# na bruh
