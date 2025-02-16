@@ -21,7 +21,6 @@ class SkipConn(nn.Module):
 	def __init__(self, in_size=1, out_size=1, hidden_size=100, hidden_layers=7):
 		super(SkipConn,self).__init__()
 		end_size = hidden_size
-
 		self.inLayer = nn.Linear(in_size, end_size)
 		self.relu = nn.LeakyReLU()
 		hidden = []
