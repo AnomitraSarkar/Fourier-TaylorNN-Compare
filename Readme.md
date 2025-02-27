@@ -1,4 +1,7 @@
 install manim to run the code files
+```bash
+pip install manim
+```
 
 on approximate run the following command to visualize result and generate output
 
