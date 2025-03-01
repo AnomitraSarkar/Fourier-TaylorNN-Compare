@@ -102,31 +102,3 @@ class TaylorNN(nn.Module):
 		taylor_features = taylor_features.view(x.shape[0], -1)
 		taylor_features = torch.nn.functional.leaky_relu(taylor_features)
 		return self.inner_model(taylor_features)
-
-
-# class ConvNN(nn.Module):
-# 	def __init__(self, in_size=1, out_size=1, hidden_size=100, hidden_layers=7):
-# 		super(ConvNN,self).__init__()
-# 		end_size = hidden_size
-
-# 		self.inLayer = nn.Conv1d(in_size, end_size,1,)
-# 		self.relu = nn.LeakyReLU()
-# 		hidden = []
-# 		for i in range(hidden_layers):
-# 			start_size = end_size*2 + in_size if i>0 else end_size + in_size
-# 			hidden.append(nn.Linear(start_size, end_size))
-# 		self.hidden = nn.ModuleList(hidden)
-# 		self.outLayer = nn.Linear(end_size*2+in_size, out_size)
-
-# 	def forward(self, x):
-# 		cur = self.relu(self.inLayer(x))
-# 		prev = torch.tensor([])
-# 		for layer in self.hidden:
-# 			combined = torch.cat([cur, prev, x], 1)
-# 			prev = cur
-# 			cur = self.relu(layer(combined))
-# 		return self.outLayer(torch.cat([cur, prev, x], 1))
-    
-
-
-# na bruh
